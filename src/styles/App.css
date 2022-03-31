@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e4dfef;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.jobs {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-job {
+  box-shadow: rgba(33, 190, 218, 0.25) 0px 25px 50px -12px;
+  padding: 1.2rem;
+}
+
+.single-job h3 {
+  text-align: center;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: #008080;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* spinner */
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-thing {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-thing p {
+  text-align: center;
+}
